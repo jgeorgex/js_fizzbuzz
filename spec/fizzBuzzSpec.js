@@ -22,4 +22,12 @@ describe("fizzBuzz", function() {
   it("Should return fizzbuzz if 30 is passed in", function() {
     expect(fizzBuzz(30)).toEqual("fizzbuzz")
   });
+
+  it("Should return 7 if 7 is passed in", function() {
+    expect(fizzBuzz(7)).toEqual(7)
+  });
+  it("Should return 17 if 17 is passed in", function() {
+    expect(fizzBuzz(17)).toEqual(17)
+  });
+
 });
