@@ -8,3 +8,4 @@ function fizzBuzz(number) {
   } else {
     return number
   }
+}
