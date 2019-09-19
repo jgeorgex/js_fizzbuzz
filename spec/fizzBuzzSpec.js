@@ -42,4 +42,10 @@ describe('Javabuzz', function() {
     });
   });
 
+  describe('When playing, says', function() {
+    it('"Java" when a number is divisible by 3', function() {
+      expect(javabuzz.says(3)).toEqual("Java");
+    });
+  });
+
 });
