@@ -42,5 +42,4 @@ describe('Javabuzz', function() {
     });
   });
 
-
 });
