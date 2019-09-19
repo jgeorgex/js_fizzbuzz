@@ -1,33 +1,17 @@
-describe("fizzBuzz", function() {
-  it("Should return fizz if 3 is passed in", function() {
-    expect(fizzBuzz(3)).toEqual("fizz")
-  });
+describe('Javabuzz', function() {
+  var javabuzz;
 
-  it("Should return buzz if 5 is passed in", function() {
-    expect(fizzBuzz(5)).toEqual("buzz")
+  describe('knows when a number is', function() {
+  it('divisible by 3', function() {
+    javabuzz = new Javabuzz();
+    expect(javabuzz.isDivisibleByThree(3)).toBe(true);
   });
-
-  it("Should return fizzbuzz if 15 is passed in", function() {
-    expect(fizzBuzz(15)).toEqual("fizzbuzz")
+});
+  describe('knows when a number is NOT', function() {
+    it('divisble by 3', function() {
+    javabuzz = new Javabuzz();
+    expect(javabuzz.isDivisibleByThree(1)).toBe(false);
   });
-
-  it("Should return fizz if 6 is passed in", function() {
-    expect(fizzBuzz(6)).toEqual("fizz")
-  });
-
-  it("Should return buzz if 10 is passed in", function() {
-    expect(fizzBuzz(10)).toEqual("buzz")
-  });
-
-  it("Should return fizzbuzz if 30 is passed in", function() {
-    expect(fizzBuzz(30)).toEqual("fizzbuzz")
-  });
-
-  it("Should return 7 if 7 is passed in", function() {
-    expect(fizzBuzz(7)).toEqual(7)
-  });
-  it("Should return 17 if 17 is passed in", function() {
-    expect(fizzBuzz(17)).toEqual(17)
-  });
+});
 
 });
